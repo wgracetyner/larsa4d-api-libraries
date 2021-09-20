@@ -18,4 +18,7 @@ The Application object can be used for cross-process communication with a runnin
 import win32com.client
 larsa4d = win32com.client.Dispatch("LARSA2000.Application")
 larsa4d.showLARSA()
+
+joint = larsa4d.project.joints.itemByIndex(1)
+print(joint.location.x)
 ```
